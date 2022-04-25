@@ -14,7 +14,9 @@ def get_time_period(df:pd.DataFrame):
   return period
 
 def preprocess(data):
-
+  
+  # testing am-pm pattern
+  # \d{1,}\/\d{1,}\/\d{1,},\s\d{1,2}:\d{1,2}\s(am|AM|pm|PM)\s-\s
   PATTERN = re.compile('\d{1,2}/\d{1,2}/\d{2},\s\d{2}:\d{2}\s-\s')
 
   try:
